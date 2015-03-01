@@ -280,3 +280,11 @@ width: 100% !important;
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}
+
+/* Custom css */
+img{
+     border: 2px solid black;
+    padding: 2%;
+    border-radius: 100%;
+    width: 10%;
+}
