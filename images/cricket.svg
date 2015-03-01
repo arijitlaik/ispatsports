@@ -23,6 +23,7 @@
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
      id="defs207" /><sodipodi:namedview
      pagecolor="#ffffff"
+
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -42,6 +43,7 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="Layer_1"
      inkscape:snap-page="true" /><g
+                                    fill="#222"
      id="g3025"
      transform="matrix(0.98877488,0,0,0.98877488,-2.4831905,-4.7766899)"><circle
        id="circle195"
