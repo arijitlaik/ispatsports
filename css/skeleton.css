@@ -289,10 +289,13 @@ img{
     transform: scale(1);
 
 }
+.event, .event img{
+transition: all 1s ease-in-out;
+}
 .event:hover{
     border:2px solid #222;
     transform: scale(1.05);
-    transition: all .2s ease-in-out;
+    transition: all .5s ease-in-out;
     color:white;
     background: #222;
     text-transform: uppercase;
@@ -300,6 +303,6 @@ img{
 .event:hover img{
     transform: scale(1.04);
     background: #ff4b4b;
-    transition: all .3s ease-in-out;
+    transition: all .5s ease-in-out;
 
 }
