@@ -411,28 +411,37 @@ hr {
 /* Custom css */
 
 img {
-    border: 2px solid black;
     padding: 2%;
     border-radius: 100%;
     transform: scale(1);
+    border: 2px solid #222;
 }
 
-.event,
-.event img {
-    transition: all 1s ease-in-out;
-}
-
-.event:hover {
-    border:2px solid #222;
-    transform: scale(1.05);
+.event {
+    padding: 1%;
+    border:3px solid white;
     transition: all .5s ease-in-out;
     color:white;
     background: #222;
     text-transform: uppercase;
+    box-shadow:2px 2px 8px #343638;
+}
+
+.event:hover {
+    background: white;
+    border-color: #222;
+    color:#222;
+    transform: scale(1.05);
+    z-index: 1000;
+    box-shadow:3px 5px 15px #343638;
+}
+
+.event img {
+    background: white;
+    transition: all .5s ease-in-out;
 }
 
 .event:hover img {
-    transform: scale(1.04);
-    background: #ff4b4b;
+    transform: scale(1.12);
     transition: all .5s ease-in-out;
 }
