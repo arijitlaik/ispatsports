@@ -262,8 +262,8 @@ button {
 
 .button.button-primary,
 button.button-primary {
-    color: #FFF;
-    background-color: #222;
+    color: #222;
+    background-color: #fff;
     font-size: 3em;
     font-weight: 900;
 }
@@ -272,9 +272,9 @@ button.button-primary {
 button.button-primary:hover,
 .button.button-primary:focus,
 button.button-primary:focus {
-    color: #222;
-    background-color: #fff;
     border-color: #222;
+    color: #FFF;
+    background-color: #222;
 }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
