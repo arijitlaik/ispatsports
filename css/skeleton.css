@@ -175,13 +175,14 @@ h5,
 h6 {
     margin-top: 0;
     margin-bottom: 2rem;
-    font-weight: 300;
+    font-weight: 900;
 }
 
 h1 {
-    font-size: 4.0rem;
+    font-size: 4em;
     line-height: 1.2;
     letter-spacing: -.1rem;
+    font-weight: 900;
 }
 
 h2 {
@@ -215,9 +216,9 @@ h6 {
 }
 /* Larger than phablet */
 
-@media (min-width: 550px) {
+@media (min-width: 750px) {
     h1 {
-        font-size: 5.0rem;
+        font-size: 8.0rem;
     }
     h2 {
         font-size: 4.2rem;
@@ -243,66 +244,37 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .button,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
+button {
     display: inline-block;
-    height: 38px;
-    padding: 0 30px;
-    color: #555;
+    padding: .3em;
     text-align: center;
-    font-size: 16px;
-    font-weight: 600;
     line-height: 38px;
-    letter-spacing: .1rem;
+    letter-spacing: -.1rem;
     text-transform: uppercase;
     text-decoration: none;
     white-space: nowrap;
     background-color: transparent;
-    border: 1px solid #bbb;
+    border: 5px solid #222;
     cursor: pointer;
     box-sizing: border-box;
-}
-
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-    color: #333;
-    border-color: #888;
     outline: 0;
 }
 
 .button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
+button.button-primary {
     color: #FFF;
-    background-color: #333;
-    border-color: #333;
+    background-color: #222;
+    font-size: 3em;
+    font-weight: 900;
 }
 
 .button.button-primary:hover,
 button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
 .button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-    color: #FFF;
-    background-color: #000;
-    border-color: #000;
+button.button-primary:focus {
+    color: #222;
+    background-color: #fff;
+    border-color: #222;
 }
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -365,6 +337,20 @@ form {
 }
 
 footer {
+    background: #222;
+    color: white;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+}
+
+footer h5 {
+    font-weight: 900;
+}
+
+footer h6 {
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-top: 1rem;
     text-transform: uppercase;
 }
 /* Misc
@@ -395,20 +381,16 @@ hr {
 }
 /* Larger than mobile */
 
-@media (min-width: 400px) {}
-/* Larger than phablet (also point when grid becomes active) */
-
-@media (min-width: 550px) {}
-/* Larger than tablet */
-
-@media (min-width: 750px) {}
-/* Larger than desktop */
-
-@media (min-width: 1000px) {}
-/* Larger than Desktop HD */
-
-@media (min-width: 1200px) {}
-/* Custom css */
+h1 {
+    color: white;
+    background: #222;
+    padding-bottom: 1rem;
+    box-shadow: 0px 4px 5px grey;
+    top: 0;
+    display: block;
+    width: 100%;
+    z-index: 2000;
+}
 
 img {
     padding: 2%;
@@ -419,21 +401,21 @@ img {
 
 .event {
     padding: 1%;
-    border:3px solid white;
+    border: 3px solid white;
     transition: all .5s ease-in-out;
-    color:white;
+    color: white;
     background: #222;
     text-transform: uppercase;
-    box-shadow:2px 2px 8px #343638;
+    box-shadow: 2px 2px 8px #343638;
 }
 
 .event:hover {
     background: white;
     border-color: #222;
-    color:#222;
+    color: #222;
     transform: scale(1.05);
     z-index: 1000;
-    box-shadow:3px 5px 15px #343638;
+    box-shadow: 3px 5px 15px #343638;
 }
 
 .event img {
@@ -443,5 +425,6 @@ img {
 
 .event:hover img {
     transform: scale(1.12);
+    background: transparent;
     transition: all .5s ease-in-out;
 }
